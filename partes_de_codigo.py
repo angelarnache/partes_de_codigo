@@ -21,3 +21,15 @@ for i in range(3):
     palabra = input("enter a word: ")
     LIST.append(palabra)
 print(LIST)
+;
+_______________________________________________
+print("hola mundo")
+print("esto es nuevo")
+print ("pureba")
+dato= 2+2
+print("la suma es: ",dato)
+dato3= 2*2
+print("la multiplicacion es:", dato3)
+dato2= 2-2
+print ("la resta es: ",dato2)
+
