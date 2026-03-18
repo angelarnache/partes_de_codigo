@@ -1,0 +1,24 @@
+lista=["1-perro","2-gato","3-conejo"]
+print("──Tienda de mascotas celeste──")
+print("lista de animales")
+for menu in range(len(lista)):
+    print(f"{lista[menu]}")
+
+condicion="falso"
+while condicion == "falso":
+    opcion=input("escoje al animal para mostrar el alimento correspondiente\n")
+    if opcion.isdigit():
+        opcion=int(opcion)
+        break
+    else:
+        continue
+if opcion == 1:
+    print("el mejor alimento para perros")
+    print("carne, pollo, pescado")
+elif opcion == 2:
+    print("el mejor alimento para gatos")
+    print("pollo, pescado, res")
+elif opcion == 3:
+    print("el mejor alimento para conejos")
+    print("entre 80 y 85 % de heno de calidad")
+    print("entre 10 y 15 % de verduras frescas de hoja verde (escarola, canónigos, rúcula)")
