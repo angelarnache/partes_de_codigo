@@ -1,0 +1,8 @@
+print("bienvenido a Cine Celeste")
+opcion=int(input("digite su edad para saber el precio: \n"))
+if opcion <=12:
+    print("el precio del boleto que debe pagar es:$8000")
+elif opcion >= 12 and opcion <=59:
+    print("el precio del boleto que debe pagar es:$12000")
+elif opcion >= 60:
+    print("el precio del boleto que debe pagar es:$9000")
