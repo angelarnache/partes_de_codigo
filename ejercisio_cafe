@@ -1,0 +1,43 @@
+lista=["cafe", "te" , "jugo"]
+precios=["$4000","3500","$5000"]
+cantidad=[]
+objeto_pedido=[]
+fijo=4000
+fijo_2=3500
+fijo_3=5000
+
+print("Bienvenido a la cafeteria celeste")
+print("/\menu de bebidas\/")
+for menu in range(len(lista)):
+    print(f"─{lista[menu]}:{precios[menu]}")
+
+condicion = "falso"
+while condicion == "falso":
+    opcion=input("Que deseas llevar: ").lower()
+    if opcion in lista:
+        objeto_pedido.append(opcion)
+        break
+    else:
+        print("opcion no valida")
+        continue
+
+while condicion == "falso":
+    opcion_2=input("cuantas bebidas quiere: ")
+    if opcion_2.isdigit():
+        opcion_2=int(opcion_2)
+        cantidad.append(opcion_2)
+        break
+    else:
+        print("digite numeros enteros")
+        continue
+
+if opcion == "cafe":
+    total=cantidad[0]*fijo
+    print(f"total a pagar:{total}")
+elif opcion == "te":
+    total_2=cantidad[0]*fijo_2
+    print(f"total a pagar {total_2}")
+elif opcion == "jugo":
+    total_3=cantidad[0]*fijo_3
+    print(f"total a pagar {total_3}")
+print("─gracias por usar─")
