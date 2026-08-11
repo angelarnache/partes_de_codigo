@@ -1,0 +1,10 @@
+print("bienvenido al gym celeste")
+opcion=int(input("digite su edad\n"))
+if opcion < 13:
+    print("eres menor de edad")
+elif opcion >= 13 and opcion <=17:
+    print(" Estas en la clase juvenil")
+elif opcion >= 18 and opcion <=59:
+    print("Estas en la clase general")
+elif opcion >= 60:
+    print(" Estas en la clase seinor")
